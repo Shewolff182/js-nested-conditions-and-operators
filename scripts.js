@@ -1,28 +1,41 @@
-/************************ Exercise 1 *************************/
+/************************** Exercise 1 ***********************/
 
-let cupcakesSold = Number(prompt("How many cupcakes were sold today?"));   
-const profitMargin = 30;
-if ( cupcakesSold < profitMargin ) {
-  alert("Gotta sell more!");
+// Write a function that takes three numbers as arguments and returns the largest number among them. Do not use `Math.max`, though you're welcome to do so after you solve it using conditionals.
+
+// Test it by calling the function with:
+
+// - 3, 6, 8
+// - 5, 4, 10
+// - 2, 7, 6
+// - 200, 300, 150
+// - 12, 11, 1
+// - 130, -8, 18
+
+// Since this is a function that returns a value, you can save what calling it evaluates to in a variable and log that to the console.
+
+
+
+
+
+/************************** Exercise 2 ***********************/
+
+let itemToBuy = "";
+let savings = 100;
+if (savings > 500) {
+  itemToBuy = "Computer";
+} else if (savings > 200) {
+  itemToBuy = "Phone";
+} else if (savings > 0) {
+  itemToBuy = "Dinner";
 } else {
-  alert("We are doing well!!!");
+  itemToBuy = "...still saving...";
 }
 
-// Update the following code to add the following condition: If the cupcakes sold and the profit margin are equal, the user should be alerted "We broke even!"
+
+// Based on the above code, what will be the value of itemToBuy after the code is run? Write your guess below. How will you check your answer to be sure it is correct?
 
 
 
-
-
-/************************ Exercise 2 *************************/
-
-// Create a variable called time and set it equal to the time that the user answers when you ask “What time is it?”
-
-// Create an if statement so that if the time is less than 10, the user will be greeted with a “Good Morning!” NOTE: You can use the 24 hours time method, also known as military time.
-
-// If the time is less than 20, the user should be greeted by a “Good Afternoon!”.
-
-// If the answer is anything else, the user should be greeted by a “Good Evening!”.
 
 
 
@@ -34,56 +47,86 @@ if ( cupcakesSold < profitMargin ) {
 
 /************************ Exercise 3 *************************/
 
-// Review the following code: 
+// Create a variable called time and set it equal to the time that the user answers when you ask "What time is it?"
 
-function isEligibleForSpecialDiscount(isNewUser, isFirstPurchase) {
-    if (isNewUser && isFirstPurchase) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  
-  const isNewUser1 = true;
-  const isFirstPurchase1 = true;
-  const isCustomer1Eligible = isEligibleForSpecialDiscount(isNewUser1, isFirstPurchase1);
-  
-  // What is the value of isCustomer1Eligible? 
-  
-  const isNewUser2 = false;
-  const isFirstPurchase2 = true;
-  const isCustomer2Eligible = isEligibleForSpecialDiscount(isNewUser2, isFirstPurchase2);
-  console.log(`Customer 2 is eligible for special discount: ${isCustomer2Eligible}`); 
-  
-// What is the value of isCustomer2Eligible? 
+// Create an if statement so that if the time is less than 10, the user will be greeted with a "Good Morning!" NOTE: You can use the 24 hours time method, also known as military time.
+
+// If the time is less than 17 (5:00pm in 12-hour time), the user should be greeted by a "Good Afternoon!".
+
+// If the answer is anything else, the user should be greeted by a "Good Evening!".
+
+
+
+
+
+
+
 
 
 /************************ Exercise 4 *************************/
 
-const age = prompt("How old are you?");
-const language = prompt("What is your favorite coding language?");
+// Review the following code: 
 
-// Create a conditional statement that checks if a user's age is greater than 18 and if their language is 'JavaScript'. If both are true, create an alert that says, "Welcome Coder!"
+function isEligibleForSpecialDiscount(isNewUser, isFirstPurchase) {
+  if (isNewUser && isFirstPurchase) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+let isNewUser1 = true;
+let isFirstPurchase1 = true;
+let isCustomer1Eligible = isEligibleForSpecialDiscount(isNewUser1, isFirstPurchase1);
 
+// Write down your idea for the value of isCustomer1Eligible below, then log it to the console to check.
+
+let isNewUser2 = false;
+let isFirstPurchase2 = true;
+let isCustomer2Eligible = isEligibleForSpecialDiscount(isNewUser2, isFirstPurchase2);
+
+// Write down your idea for the value of isCustomer2Eligible below, then log it to the console to check.
 
 
 /************************ Exercise 5 *************************/
 
-const favDanceMove = prompt("What is your favorite coding language?");
-const userAge = prompt("How old are you?");
-const color = prompt("What is your favorite color?");
+// let age2 = prompt("How old are you?");
+// let language = prompt("What is your favorite coding language?");
 
-// Create a conditional statement that checks if a user's age is less than 45 and if their favorite dance move is The Robot and their favorite color is blue. 
-// If all are true, create an alert that says, "Welcome!". If the condition evaluates to false, create an alert that says 'Access Denied!'.
+// Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
 
+// Create a conditional statement that checks if a user's age is greater than 18 and if their language is 'JavaScript'. If both are true, log a message to the console that says, "Welcome Coder!"
 
-
+// Note that this variable is called `age2`, and don't check the previous `age` variable! (A production-level application would use scope to make sure we don't have to do that!)
 
 
 
 
 /************************ Exercise 6 *************************/
+
+// let favDanceMove = prompt("What is your favorite dance move?");
+// let userAge = prompt("How old are you?");
+// let color = prompt("What is your favorite color?");
+
+// Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
+
+// Create a conditional statement that checks if a user's age is less than 45 and their favorite dance move is The Robot and their favorite color is blue. DON'T FORGET that all three prompts will evaluate to strings, NOT numbers!
+
+// If all are true, log a message to the console that says, "Welcome!". If any of them are not true, log a message to the console that says 'Access Denied!'.
+
+// Test it by inputting all 3 answers so the conditions are true, and then with only 1 or 2 true.
+
+// Feel free to comment out the code once you solve the problem, so that you don't have too many prompts interfering with your flow!
+
+
+
+
+
+
+/************************ Bonus Exercises *************************/
+
+
+/************************ Exercise 7 *************************/
 
 function isEligibleForDiscount(isStudent, isSeniorCitizen) {
   if (isStudent || isSeniorCitizen) {
@@ -93,21 +136,20 @@ function isEligibleForDiscount(isStudent, isSeniorCitizen) {
   }
 }
 
-const isStudentParticipant = true;
-const isSeniorParticipant = false;
+let isStudentParticipant = true;
+let isSeniorParticipant = false;
 
-// Review the above code. Create a variable called isEligible1 and assign it the value of calling the isEligibleForDiscount with isStudentParticipant and isSeniorParticipant as arguments. What is the value of isEligible1?  
+// Review the above code. Create a variable called isEligible1 and assign it the value of calling the isEligibleForDiscount with isStudentParticipant and isSeniorParticipant as arguments. What is the value of isEligible1?
 
-
-const isStudentParticipant2 = false;
-const isSeniorParticipant2 = true;
-const isEligible2 = isEligibleForDiscount(isStudentParticipant2, isSeniorParticipant2);
+let isStudentParticipant2 = false;
+let isSeniorParticipant2 = true;
+let isEligible2 = isEligibleForDiscount(isStudentParticipant2, isSeniorParticipant2);
 
 // What is the value of isEligible2?
 
-const isStudentParticipant3 = false;
-const isSeniorParticipant3 = false;
-const isEligible3 = isEligibleForDiscount(isStudentParticipant3, isSeniorParticipant3);
+let isStudentParticipant3 = false;
+let isSeniorParticipant3 = false;
+let isEligible3 = isEligibleForDiscount(isStudentParticipant3, isSeniorParticipant3);
 
 
 // What is the value of isEligible3?
@@ -115,30 +157,32 @@ const isEligible3 = isEligibleForDiscount(isStudentParticipant3, isSeniorPartici
 
 
 
-/************************ Exercise 7 *************************/
-
-function getWeatherForecast(location) {
-  const defaultLocation = 'New York';
-  const defaultForecast = 'Partly cloudy with a chance of showers';
-
-  const selectedLocation = location || defaultLocation;
-
-  return `Weather forecast for ${selectedLocation}: ${defaultForecast}`;
-}
-
-// Call the getWeatherForecast with no arguments. What is the output? 
-
-
-
-
-
-// Call the getWeatherForecast with userLocation1 as the argument. What is the output?
-const userLocation1 = 'Los Angeles';
-
-
 
 
 /************************ Exercise 8 *************************/
+
+function authenticateUser(username, password) {
+  let validUsername = "john_doe";
+  let validPassword = "secretpassword";
+
+  if (username === validUsername && password === validPassword) {
+    return "User authenticated.";
+  } else {
+    return "Invalid username or password.";
+  }
+}
+
+
+  // Call the authenticateUser function. Pass in arguments that would return "User authenticated"
+
+
+
+  // Call the authenticateUser function. Pass in arguments that would return "Invalid username or password."
+
+
+
+
+/************************ Exercise 9 *************************/
 
 // Create a variable named busRunning and ask the user if the bus is running today.
 
@@ -146,72 +190,134 @@ const userLocation1 = 'Los Angeles';
 // Create a second variable named passengerNum and ask the user how many passengers are currently on the bus.
 
 
-// Create a conditional statement that says if the bus is running AND the bus has less than or equal to 75 passengers, the program gives them an alert that says “You can take the bus!”
+// Create a conditional statement that says if the bus is running AND the bus has less than or equal to 75 passengers, the program should log to the console, "You can take the bus!"
 
 
-// Otherwise, the user should get an alert that says “You will have to wait.”
+// Otherwise, the user should get a logged message that says "You will have to wait."
+
+
+/************************ Exercise 10 *************************/
+
+// let cupcakesSold = Number(prompt("How many cupcakes were sold today?"));
+// let profitMargin = 30;
+// if (cupcakesSold < profitMargin) {
+//   console.log("Gotta sell more!");
+// } else {
+//   console.log("We are doing well!!!");
+// }
+
+// Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
+
+// Update the code to add the following condition: If the cupcakes sold and the profit margin are equal, the user should see a log in the console: "We broke even!"
 
 
 
+/************************** Exercise 11 ***********************/
 
-/************************ Exercise 9 *************************/
+// let age = 16;
 
-function authenticateUser(username, password) {
-    const validUsername = "john_doe";
-    const validPassword = "secretpassword";
-  
-    if (username === validUsername && password === validPassword) {
-      return "User authenticated.";
-    } else {
-      return "Invalid username or password.";
-    }
+// if (age >= 16) {
+//   console.log("You can get your driver's license.");
+// } else {
+//   console.log("You can't get your driver's license or vote yet.")
+// }
+
+// if (age >= 18) {
+//   console.log("You can vote.");
+// } else {
+//   console.log("You can't yet vote.");
+// }
+
+// PART 1
+
+// Test out the code above by changing the value we gave `age` to see if you can get all four messages.
+
+// Note that if we set the age to under 16, we get the message that they can't vote twice. This is because we know if they're under 16 that they can't do both (which is why the second message say they can't do either), but because the conditions are separate, we're checking again anyway.
+
+// ONE WAY to fix this is by nesting the if statements. (The other is combining the conditions with logical operators.)
+
+// Follow these steps to nest the if statements.
+
+// 1. Remove the `else` statement for the second `if` statement. Don't forget to leave the `if` statement's closing curly bracket!
+
+// 2. Move the second `if` statement, with its condition and code block, directly into the first `if` statement's code block, right under the first console log.
+
+// Now try running the code again with an age under 16.
+
+
+// Your final version could look something like this (but don't copy-paste, write the code yourself!)
+
+// let age = 50;
+
+// if (age >= 16) {
+//   console.log("You can get your driver's license.");
+//   if (age >= 18) {
+//     console.log("And you can vote.");
+//   } else {
+//     console.log("But you can't yet vote.");
+//   }
+// } else {
+//   console.log("You can't get your driver's license or vote yet.")
+// }
+
+// Now, guess what will happen with each of the 3 possibilities, write it down below, and then run the code to see what actually happens!
+
+// What will happen with an age of 5?
+
+// What will happen with an age of 17?
+
+// What will happen with an age of 20?
+
+  /************************ Exercise 12 *************************/
+function calculateTotalPrice(quantity, unitPrice) {
+  let subtotal = quantity * unitPrice;
+  let total;
+  let discountPercentage;
+
+  if (quantity >= 10) {
+    // Apply 10% discount for purchasing 10 or more items
+    discountPercentage = 10;
+  } else if (quantity >= 5) {
+    // Apply 5% discount for purchasing 5 to 9 items
+    discountPercentage = 5;
+  } else {
+    // No discount for purchasing less than 5 items
+    discountPercentage = 0;
   }
-  
-  
-  // Call the authenticateUser function. Pass in arguments that would return "User authenticated"
 
-
-
-  // Call the authenticateUser function. Pass in arguments that would return "Invalid username or password."
-  
-
-
-
-
-  /************************ Exercise 10 *************************/
-  function calculateTotalPrice(quantity, unitPrice) {
-    const subtotal = quantity * unitPrice;
-    let total;
-    let discountPercentage;
-  
-    if (quantity >= 10) {
-      // Apply 10% discount for purchasing 10 or more items
-      discountPercentage = 10;
-    } else if (quantity >= 5) {
-      // Apply 5% discount for purchasing 5 to 9 items
-      discountPercentage = 5;
-    } else {
-      // No discount for purchasing less than 5 items
-      discountPercentage = 0;
-    }
-  
-    if (subtotal >= 100) {
-      // Apply an additional 20% discount for a subtotal of $100 or more
-      discountPercentage += 20;
-    }
-  
-    const discountAmount = (subtotal * discountPercentage) / 100;
-    total = subtotal - discountAmount;
-  
-    return total.toFixed(2);
+  if (subtotal >= 100) {
+    // Apply an additional 20% discount for a subtotal of $100 or more
+    discountPercentage += 20;
   }
+
+  let discountAmount = (subtotal * discountPercentage) / 100;
+  total = subtotal - discountAmount;
+
+  return total.toFixed(2);
+}
   
   // Call calculateTotalPrice so that no discount is applied. 
 
 
 
-  // Call calculateTotalPrice so that a 5% discount is applied. 
+  // Call calculateTotalPrice so that a 5% discount is applied.
+
+/************************ Exercise 13 *************************/
+
+function getWeatherForecast(location) {
+  let defaultLocation = "New York";
+  let defaultForecast = "Partly cloudy with a chance of showers";
+
+  let selectedLocation = location || defaultLocation;
+
+  return `Weather forecast for ${selectedLocation}: ${defaultForecast}`;
+}
+
+// Call the getWeatherForecast with no arguments. What is the output?
 
 
 
-  
+
+
+// Call the getWeatherForecast with userLocation1 as the argument. What is the output?
+let userLocation1 = "Los Angeles";
