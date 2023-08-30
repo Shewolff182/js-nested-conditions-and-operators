@@ -42,8 +42,8 @@ if (condition1) {
  - The logical AND operator (&&) returns true if both condition are true; otherwise, it returns false.
 
  ```javascript
-const x = 5;
-const y = 10;
+let x = 5;
+let y = 10;
 
 console.log(x < 10 && y > 5); // Output: true (both conditions are true)
 console.log(x < 3 && y > 15); // Output: false (second condition is false)
@@ -52,8 +52,8 @@ console.log(x < 3 && y > 15); // Output: false (second condition is false)
  - The logical OR operator (||) returns true if at least one of the operands is true; otherwise, it returns false.
 
 ```javascript
-const a = 2;
-const b = 8;
+let a = 2;
+let b = 8;
 
 console.log(a === 2 || b === 10); // Output: true (first condition is true)
 console.log(a === 3 || b === 10); // Output: false (both conditions are false)
@@ -62,7 +62,7 @@ console.log(a === 3 || b === 10); // Output: false (both conditions are false)
  - The logical NOT operator (!) negates the Boolean value of an operand. It converts true to false and false to true.
 
 ```javascript
-const isLogged = false;
+let isLogged = false;
 
 console.log(!isLogged); // Output: true (negates the false value to true)
 
