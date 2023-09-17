@@ -1,21 +1,26 @@
 /************************** Exercise 1 ***********************/
 
 // Write a function that takes three numbers as arguments and returns the largest number among them. Do not use `Math.max`, though you're welcome to do so after you solve it using conditionals.
-
+function largestNumber(num1, num2, num3) {
+  if (num1 > num2 && num1 > num3) {
+    return num1;
+  } else if (num2 > num1 && num2 > num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+}
 // Test it by calling the function with:
 
-// - 3, 6, 8
-// - 5, 4, 10
-// - 2, 7, 6
-// - 200, 300, 150
-// - 12, 11, 1
-// - 130, -8, 18
+console.log(largestNumber(3, 6, 8));
+console.log(largestNumber(5, 4, 10));
+console.log(largestNumber(2, 7, 6));
+console.log(largestNumber(200, 300, 150));
+console.log(largestNumber(12, 11, 1));
+console.log(largestNumber(130, -8, 18));
 
 // Since this is a function that returns a value, you can save what calling it evaluates to in a variable and log that to the console.
-
-
-
-
+//it didnt read this part before console logging everything
 
 /************************** Exercise 2 ***********************/
 
@@ -32,7 +37,11 @@ if (savings > 500) {
 }
 
 
-// Based on the above code, what will be the value of itemToBuy after the code is run? Write your guess below. How will you check your answer to be sure it is correct?
+// Based on the above code, what will be the value of itemToBuy after the code is run? 
+// Write your guess below. 
+//dinner
+// How will you check your answer to be sure it is correct?
+console.log(itemToBuy);
 
 
 
