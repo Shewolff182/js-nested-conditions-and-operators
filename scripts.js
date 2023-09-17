@@ -92,8 +92,18 @@ console.log(isCustomer2Eligible);
 let age2 = prompt("How old are you?");
 let language = prompt("What is your favorite coding language?");
 
-// Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
+function userCheck(age, lang) {
+  if (age > 18 && lang === "Javascript") {
+    console.log("Welcome Coder!");
+  } else {
+    console.log("No Entry Granted!");
+  }
+}
 
+userCheck(age2, language);
+
+
+// Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
 // Create a conditional statement that checks if a user's age is greater than 18 and if their language is 'JavaScript'. If both are true, log a message to the console that says, "Welcome Coder!"
 
 // Note that this variable is called `age2`, and don't check the previous `age` variable! (A production-level application would use scope to make sure we don't have to do that!)
