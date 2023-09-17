@@ -44,33 +44,20 @@ if (savings > 500) {
 console.log(itemToBuy);
 
 
-
-
-
-
-
-
-
-
-
-
 /************************ Exercise 3 *************************/
 
 // Create a variable called time and set it equal to the time that the user answers when you ask "What time is it?"
 
 // Create an if statement so that if the time is less than 10, the user will be greeted with a "Good Morning!" NOTE: You can use the 24 hours time method, also known as military time.
-
 // If the time is less than 17 (5:00pm in 12-hour time), the user should be greeted by a "Good Afternoon!".
-
 // If the answer is anything else, the user should be greeted by a "Good Evening!".
+let time = prompt("What time is it?");
 
-
-
-
-
-
-
-
+if (Number(time) < 10) {
+  alert("Good Morning!");
+}else if (Number(time) < 17) {
+  alert ("Good Afternoon!");
+} else ("Good Evening!");
 
 /************************ Exercise 4 *************************/
 
@@ -89,18 +76,21 @@ let isFirstPurchase1 = true;
 let isCustomer1Eligible = isEligibleForSpecialDiscount(isNewUser1, isFirstPurchase1);
 
 // Write down your idea for the value of isCustomer1Eligible below, then log it to the console to check.
+//true
+console.log(isCustomer1Eligible);
 
 let isNewUser2 = false;
 let isFirstPurchase2 = true;
 let isCustomer2Eligible = isEligibleForSpecialDiscount(isNewUser2, isFirstPurchase2);
 
 // Write down your idea for the value of isCustomer2Eligible below, then log it to the console to check.
-
+//false
+console.log(isCustomer2Eligible);
 
 /************************ Exercise 5 *************************/
 
-// let age2 = prompt("How old are you?");
-// let language = prompt("What is your favorite coding language?");
+let age2 = prompt("How old are you?");
+let language = prompt("What is your favorite coding language?");
 
 // Uncomment the above code (and feel free to re-comment it again to avoid excessive prompts.)
 
