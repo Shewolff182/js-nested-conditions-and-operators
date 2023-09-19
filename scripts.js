@@ -160,23 +160,26 @@ function isEligibleForDiscount(isStudent, isSeniorCitizen) {
 let isStudentParticipant = true;
 let isSeniorParticipant = false;
 
-// Review the above code. Create a variable called isEligible1 and assign it the value of calling the isEligibleForDiscount with isStudentParticipant and isSeniorParticipant as arguments. What is the value of isEligible1?
+// Review the above code. 
+// Create a variable called isEligible1 and assign it the value of calling the isEligibleForDiscount with isStudentParticipant and isSeniorParticipant as arguments. 
+// What is the value of isEligible1?
+let isEligible1 = isEligibleForDiscount(isStudentParticipant, isSeniorParticipant);
+//true
+console.log(isEligible1);
 
 let isStudentParticipant2 = false;
 let isSeniorParticipant2 = true;
 let isEligible2 = isEligibleForDiscount(isStudentParticipant2, isSeniorParticipant2);
-
+console.log(isEligible2);
 // What is the value of isEligible2?
-
+//true
 let isStudentParticipant3 = false;
 let isSeniorParticipant3 = false;
 let isEligible3 = isEligibleForDiscount(isStudentParticipant3, isSeniorParticipant3);
-
+console.log(isEligible3);
 
 // What is the value of isEligible3?
-
-
-
+//false
 
 
 
