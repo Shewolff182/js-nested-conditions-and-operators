@@ -51,18 +51,20 @@ console.log(itemToBuy);
 // Create an if statement so that if the time is less than 10, the user will be greeted with a "Good Morning!" NOTE: You can use the 24 hours time method, also known as military time.
 // If the time is less than 17 (5:00pm in 12-hour time), the user should be greeted by a "Good Afternoon!".
 // If the answer is anything else, the user should be greeted by a "Good Evening!".
-let time = prompt("What time is it?");
 
-if (Number(time) < 10) {
-  alert("Good Morning!");
-}else if (Number(time) < 17) {
-  alert ("Good Afternoon!");
-} else ("Good Evening!");
+//code:
+// let time = prompt("What time is it?");
+
+// if (Number(time) < 10) {
+//   alert("Good Morning!");
+// }else if (Number(time) < 17) {
+//   alert ("Good Afternoon!");
+// } else ("Good Evening!");
 
 /************************ Exercise 4 *************************/
 
 // Review the following code: 
-
+// code:
 function isEligibleForSpecialDiscount(isNewUser, isFirstPurchase) {
   if (isNewUser && isFirstPurchase) {
     return true;
@@ -113,12 +115,12 @@ console.log(isCustomer2Eligible);
 
 
 /************************ Exercise 6 *************************/
-
+//code:
 let favDanceMove = prompt("What is your favorite dance move?");
 let userAge = prompt("How old are you?");
 let color = prompt("What is your favorite color?");
 function userChecking(favDanceMove, userAge, color){
-  if (userAge < 45 && favDanceMove === "The Robot" && color === blue) {
+  if (userAge < 45 && favDanceMove === "The Robot" && color === "blue") {
     console.log("Welcome!");
   } else {
     console.log("Access Denied!");
@@ -148,7 +150,7 @@ userChecking(favDanceMove, userAge, color);
 
 
 /************************ Exercise 7 *************************/
-
+// code
 function isEligibleForDiscount(isStudent, isSeniorCitizen) {
   if (isStudent || isSeniorCitizen) {
     return true;
@@ -182,7 +184,6 @@ console.log(isEligible3);
 //false
 
 
-
 /************************ Exercise 8 *************************/
 
 function authenticateUser(username, password) {
@@ -198,11 +199,9 @@ function authenticateUser(username, password) {
 
 
   // Call the authenticateUser function. Pass in arguments that would return "User authenticated"
-
-
-
+console.log(authenticateUser("john_doe", "secretpassword"));
   // Call the authenticateUser function. Pass in arguments that would return "Invalid username or password."
-
+  console.log(authenticateUser("shan_wolff", "NOTsecretpassword"));
 
 
 
